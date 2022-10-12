@@ -44,7 +44,7 @@ public class MainViewModel
     {
         _account = newAccount;
         LoadTransactions();
-        //this.Balance = (int)account.Balance;
+        Balance = (int)_account.Balance;
     }
 
     private void LoadTransactions()

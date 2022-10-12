@@ -1,6 +1,7 @@
 namespace Capstone5.Domain
 
 open System
+open Newtonsoft.Json
 
 type BankOperation =
     | Deposit
@@ -25,6 +26,10 @@ type CreditAccount = CreditAccount of Account
 type RatedAccount =
     | InCredit of CreditAccount
     | Overdrawn of Account
+    member this.Balance =
+        match this with
+        | InCredit(CreditAccount account) -> account.Balance
+        | Overdrawn account -> account.Balance
     member this.GetField getter =
         match this with
         | InCredit (CreditAccount account) -> getter account
@@ -32,14 +37,7 @@ type RatedAccount =
 
 module Transactions =
     /// Serializes a transaction
-    let serialize transaction =
-        $"{transaction.Timestamp}***%s{transaction.Operation}***%M{transaction.Amount}"
+    let serialize transaction = JsonConvert.SerializeObject transaction
 
     /// Deserializes a transaction
-    let deserialize (fileContents: string) =
-        let parts =
-            fileContents.Split([| "***" |], StringSplitOptions.None)
-
-        { Timestamp = DateTime.Parse parts.[0]
-          Operation = parts.[1]
-          Amount = Decimal.Parse parts.[2] }
+    let deserialize (fileContents: string) = JsonConvert.DeserializeObject<Transaction> fileContents
