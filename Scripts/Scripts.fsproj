@@ -5,10 +5,12 @@
     <RootNamespace>Scripts</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="FootballResults.csv" />
-    <None Include="lesson-30.fsx" />
+    <None Include="scratchpad.fsx" />
     <Compile Include="lesson-30.fs" />
-    <Content Include="FootballResultsBad.csv" />
+    <Compile Include="lesson-31.fs" />
+    <Content Include="Data\sample-package.html" />
+    <Content Include="Data\FootballResultsBad.csv" />
+    <Content Include="Data\FootballResults.csv" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FSharp.Data" Version="5.0.2" />

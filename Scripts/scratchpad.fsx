@@ -7,7 +7,7 @@ open XPlot.GoogleCharts
 [<Literal>]
 let ResolutionFolder = __SOURCE_DIRECTORY__
 
-type Football = CsvProvider<"FootballResults.csv", ResolutionFolder=ResolutionFolder>
+type Football = CsvProvider<"Data\FootballResults.csv", ResolutionFolder=ResolutionFolder>
 let data = Football.GetSample().Rows |> Seq.toArray
 
 data

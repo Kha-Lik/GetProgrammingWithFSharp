@@ -6,8 +6,8 @@ open XPlot.GoogleCharts
 [<Literal>]
 let ResolutionFolder = __SOURCE_DIRECTORY__
 
-type Football = CsvProvider<"FootballResults.csv", ResolutionFolder=ResolutionFolder>
-let data = Football.GetSample().Rows |> Seq.toArray
+type Football = CsvProvider<"Data\FootballResults.csv", ResolutionFolder=ResolutionFolder>
+let data = Football.GetSample().Rows
 
 data
 |> Seq.filter (fun row -> row.``Full Time Home Goals`` > row.``Full Time Away Goals``)
