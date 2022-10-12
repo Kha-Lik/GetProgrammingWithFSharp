@@ -6,6 +6,12 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Capstone3", "Capstone3\Caps
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Capstone4", "Capstone4\Capstone4.fsproj", "{9C3C5FC9-7412-4B57-A751-9CEF2A20C117}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capstone5", "Capstone5", "{0D5DCAFF-EC11-4690-A208-40E1B3CA10C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClient", "Capstone5\WpfClient\WpfClient.csproj", "{436C01B4-5FCE-42DF-835D-0264E35AC10C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Core", "Capstone5\Core\Core.fsproj", "{C2581A31-2F26-4573-9E0E-89C5EB22577B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,5 +34,17 @@ Global
 		{9C3C5FC9-7412-4B57-A751-9CEF2A20C117}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C3C5FC9-7412-4B57-A751-9CEF2A20C117}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C3C5FC9-7412-4B57-A751-9CEF2A20C117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2581A31-2F26-4573-9E0E-89C5EB22577B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2581A31-2F26-4573-9E0E-89C5EB22577B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2581A31-2F26-4573-9E0E-89C5EB22577B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2581A31-2F26-4573-9E0E-89C5EB22577B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{436C01B4-5FCE-42DF-835D-0264E35AC10C} = {0D5DCAFF-EC11-4690-A208-40E1B3CA10C8}
+		{C2581A31-2F26-4573-9E0E-89C5EB22577B} = {0D5DCAFF-EC11-4690-A208-40E1B3CA10C8}
 	EndGlobalSection
 EndGlobal
