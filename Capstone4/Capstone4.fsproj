@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Utils.fs"/>
+        <Compile Include="Domain.fs"/>
+        <Compile Include="Operations.fs"/>
+        <Compile Include="FileRepository.fs"/>
+        <Compile Include="Auditing.fs"/>
+        <None Include="Listings.fsx"/>
+        <Compile Include="Program.fs"/>
+        <None Include="Scratchpad.fsx"/>
+    </ItemGroup>
+
+</Project>
