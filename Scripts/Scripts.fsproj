@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Scripts</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="FootballResults.csv" />
+    <None Include="lesson-30.fsx" />
+    <Compile Include="lesson-30.fs" />
+    <Content Include="FootballResultsBad.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="5.0.2" />
+    <PackageReference Include="XPlot.GoogleCharts" Version="3.0.1" />
+  </ItemGroup>
+</Project>

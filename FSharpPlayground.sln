@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClient", "Capstone5\WpfC
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Core", "Capstone5\Core\Core.fsproj", "{C2581A31-2F26-4573-9E0E-89C5EB22577B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Scripts", "Scripts\Scripts.fsproj", "{D78C1E3A-917E-4F37-9BE5-545D5D67FA88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{C2581A31-2F26-4573-9E0E-89C5EB22577B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2581A31-2F26-4573-9E0E-89C5EB22577B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2581A31-2F26-4573-9E0E-89C5EB22577B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78C1E3A-917E-4F37-9BE5-545D5D67FA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78C1E3A-917E-4F37-9BE5-545D5D67FA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78C1E3A-917E-4F37-9BE5-545D5D67FA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78C1E3A-917E-4F37-9BE5-545D5D67FA88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{436C01B4-5FCE-42DF-835D-0264E35AC10C} = {0D5DCAFF-EC11-4690-A208-40E1B3CA10C8}
